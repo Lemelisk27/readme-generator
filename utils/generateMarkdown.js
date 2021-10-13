@@ -1,50 +1,39 @@
 const fs = require('fs')
 
-function title(data) {
-  fs.writeFile('README.md', `# ${data}\n`, function(error) {
-    if (error) {
-      console.log(error)
-    }
-  })
-}
-
-function licenseBadge(data) {
-  fs.appendFile('README.md', `![license badge](https://img.shields.io/badge/license-${data}-blue)`, function(error) {
-    if (error) {
-      console.log(error)
-    }
-  })
-}
-
-function description(data) {
-  fs.appendFile('README.md',
-    `\n## Description\n${data}`,
-    function (error) {
-      if (error) {
-        console.log(error)
-      }
-    }
-  )
-}
-
-function contents() {
-  fs.appendFile('README.md',
-  `\n## Table of Contents
+function writeFile(resp) {
+    fs.writeFile('README.md',
+    `# ${resp.title}
+![license badge](https://img.shields.io/badge/license-${resp.license}-blue)
+## Description
+${resp.desc}
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)\n`,
+- [License](#license)
+## Installation
+${resp.install}
+## Usage
+${resp.useage}  
+![screenshot](assets/images/screenshot.png)
+## Credits
+Zach Smith - [GitHub Profile](https://github.com/${resp.username})
+## License
+This product is licensed under the ${resp.license} license.
+## How to Contribute
+${resp.countrib}
+## Tests
+${resp.test}
+## Questions
+If you have any questions you can contact me directly at ${resp.email}. You can find more of my work at [${resp.username}](https://github.com/${resp.username})
+`,
     function (error) {
-      if (error) {
-        console.log(error)
-      }
-    }
-  )
+        if (error) {
+            console.log(error)
+        }
+    })
 }
 
 module.exports = {
-  title,
-  licenseBadge,
-  description,
-  contents,
+    writeFile,
 }

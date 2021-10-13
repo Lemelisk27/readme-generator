@@ -1,20 +1,6 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 const markdown = require('./utils/generateMarkdown')
-const newFile = require('./newindex')
-
-// const resp = 
-// {
-//     username: 'Lemelisk27',
-//     email: 'Lemelisk27@gmail.com',
-//     title: 'README Generator',
-//     desc: 'This is a project',
-//     license: 'MIT',
-//     install: 'npm i',
-//     useage: 'Just do it',
-//     countrib: 'No!',
-//     test: 'Nope'
-// }
 
 inquirer
     .prompt([
@@ -67,33 +53,5 @@ inquirer
     ])
     .then((resp) => {
         // console.log(resp)
-        newFile.writeFile(resp)
+        markdown.writeFile(resp)
     })
-
-// inquirer
-//     .prompt([
-//         {
-//             type: 'input',
-//             message: 'Just type something!',
-//             name: 'message',
-//         }
-//     ])
-//     .then(() => {
-//         buildText()
-//     })
-//     // .then(() => {
-//     //     markdown.licenseBadge(resp.license)
-//     // })
-//     // .then(() => {
-//     //     markdown.description(resp.desc)
-//     // })
-//     // .then(() => {
-//     //     markdown.contents()
-//     // })
-
-// function buildText() {
-//     markdown.title(resp.title);
-//     markdown.licenseBadge(resp.license);
-//     markdown.description(resp.desc);
-//     markdown.contents();
-// }
