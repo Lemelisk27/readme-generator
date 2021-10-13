@@ -29,7 +29,7 @@ ${resp.desc}
 ## Installation
 ${resp.install}
 ## Usage
-${resp.useage}
+${resp.useage}  
 ![screenshot](assets/images/screenshot.png)
 ## Credits
 Zach Smith - [GitHub Profile](https://github.com/${resp.username})

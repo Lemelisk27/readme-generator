@@ -1,16 +1,16 @@
 # README Generator
 ![license badge](https://img.shields.io/badge/license-MIT-blue)
 ## Description
-This is a program that will create a README.md file.
+This is a node JavaScript application that will create a README file based on user input.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 ## Installation
-npm i
+In the console run: npm i
 ## Usage
-node index.js
+In the console run: node index.js  
 ![screenshot](assets/images/screenshot.png)
 ## Credits
 Zach Smith - [GitHub Profile](https://github.com/Lemelisk27)
