@@ -1,20 +1,4 @@
 const fs = require('fs')
-const licenseUrl = "https://img.shields.io/badge/license-MIT-blue"
-
-const data = 
-{
-    username: 'Lemelisk27',
-    email: 'Lemelisk27@gmail.com',
-    title: 'README Generator',
-    desc: 'This is a project',
-    license: 'MIT',
-    install: 'npm i',
-    useage: 'Just do it',
-    countrib: 'No!',
-    test: 'Nope'
-}
-
-// title(data)
 
 function title(data) {
   fs.writeFile('README.md', `# ${data}\n`, function(error) {
