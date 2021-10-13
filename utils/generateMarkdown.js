@@ -1,20 +1,66 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+const fs = require('fs')
+const licenseUrl = "https://img.shields.io/badge/license-MIT-blue"
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
+const data = 
+{
+    username: 'Lemelisk27',
+    email: 'Lemelisk27@gmail.com',
+    title: 'README Generator',
+    desc: 'This is a project',
+    license: 'MIT',
+    install: 'npm i',
+    useage: 'Just do it',
+    countrib: 'No!',
+    test: 'Nope'
 }
 
-module.exports = generateMarkdown;
+// title(data)
+
+function title(data) {
+  fs.writeFile('README.md', `# ${data}\n`, function(error) {
+    if (error) {
+      console.log(error)
+    }
+  })
+}
+
+function licenseBadge(data) {
+  fs.appendFile('README.md', `![license badge](https://img.shields.io/badge/license-${data}-blue)`, function(error) {
+    if (error) {
+      console.log(error)
+    }
+  })
+}
+
+function description(data) {
+  fs.appendFile('README.md',
+    `\n## Description\n${data}`,
+    function (error) {
+      if (error) {
+        console.log(error)
+      }
+    }
+  )
+}
+
+function contents() {
+  fs.appendFile('README.md',
+  `\n## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)\n`,
+    function (error) {
+      if (error) {
+        console.log(error)
+      }
+    }
+  )
+}
+
+module.exports = {
+  title,
+  licenseBadge,
+  description,
+  contents,
+}
