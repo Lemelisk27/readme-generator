@@ -1,7 +1,7 @@
 # README Generator
 ![license badge](https://img.shields.io/badge/license-MIT-blue)
 ## Description
-This is an application that uses node js to create a README file based on the user's input.
+This application uses node.js to create a README file based on the user's input.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -17,7 +17,7 @@ Zach Smith - [GitHub Profile](https://github.com/Lemelisk27)
 ## License
 This product is licensed under the MIT license.
 ## How to Contribute
-None at this time
+None at this time.
 ## Tests
 Test at your own risk.
 ## Questions

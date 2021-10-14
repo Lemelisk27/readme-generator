@@ -28,7 +28,7 @@ inquirer
             type: 'list',
             message: 'Please choose a license for your application.',
             name: 'license',
-            choices: ['MIT', 'GNU GPLv3', 'Apache 2.0', 'ISC', 'BSD 3']
+            choices: ['MIT', 'GNU', 'Apache', 'ISC', 'BSD']
         },
         {
             type: 'input',
@@ -52,6 +52,5 @@ inquirer
         },
     ])
     .then((resp) => {
-        // console.log(resp)
         markdown.writeFile(resp)
     })
