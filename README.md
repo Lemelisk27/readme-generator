@@ -1,7 +1,7 @@
-# README Generator
+# README Generator - [Usege Video](https://watch.screencastify.com/v/pzZ4PF8k9TKlZwKqMCPQ)
 ![license badge](https://img.shields.io/badge/license-MIT-blue)
 ## Description
-This is a node.js application that will create a README file based on the user's input.
+This is an application that creates a README file based on user input.
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
