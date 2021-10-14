@@ -1,4 +1,4 @@
-# README Generator - [Usege Video](https://watch.screencastify.com/v/pzZ4PF8k9TKlZwKqMCPQ)
+# README Generator - [Usage Video](https://watch.screencastify.com/v/pzZ4PF8k9TKlZwKqMCPQ)
 ![license badge](https://img.shields.io/badge/license-MIT-blue)
 ## Description
 This is an application that creates a README file based on user input.
