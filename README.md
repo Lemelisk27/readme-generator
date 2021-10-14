@@ -12,6 +12,7 @@ npm i
 ## Usage
 node index.js  
 ![screenshot](assets/images/screenshot.png)
+[video](assets/video/video.mp4)
 ## Credits
 Zach Smith - [GitHub Profile](https://github.com/Lemelisk27)
 ## License
